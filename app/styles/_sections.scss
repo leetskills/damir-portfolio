@@ -1,0 +1,82 @@
+.work-bg {
+  @extend .content-section;
+  background-color: $brand-primary;
+}
+
+.made-bg {
+  @extend .content-section;
+  background-image: url("../images/london-bg.jpg");
+
+  p.lead {
+    margin: 100px 0;
+
+    .fa-heart {
+      color: $brand-primary;
+    }
+  }
+
+  .photo-attr {
+    font-family: $font-family-sans-serif;
+    font-size: small;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}
+
+.process-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/process-bg.jpg");
+}
+
+.visual-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/process/visual.jpg");
+  background-position: top center;
+}
+
+.prototyping-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/process/prototyping.jpg");
+  background-position: top center;
+}
+
+.deliverables-bg {
+  @extend .content-section;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
+
+.validation-bg {
+  @extend .content-section;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
+
+// Work
+
+.projects-sketching-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/work/zonza-projects-sketching.jpg");
+}
+
+.refresh-backlog-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/work/zonza-refresh-backlog.png");
+  background-position: top center;
+}
+
+// About
+
+.about-bg {
+  .img-responsive {
+    max-height: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin absolute-block($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}

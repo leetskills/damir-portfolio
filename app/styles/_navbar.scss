@@ -1,0 +1,117 @@
+.navbar {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-width: 0;
+  transition: background-color 0.3s;
+  margin-bottom: 0;
+
+  .navbar-brand {
+    &,
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+
+  .navbar-nav > li {
+    a {
+      font-size: $font-size-small;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+
+      @media (max-width: $screen-sm-min) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    &.active a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.navbar.affix-top {
+  background-color: transparent;
+
+  @media screen and (max-width: $screen-xs-min) {
+    .navbar-collapse {
+      background-color: rgba(0,0,0,0.8);
+      border-width: 0;
+    }
+  }
+
+  .navbar-nav > li {
+    a {
+      & {
+        color: $gray-lighter;
+      }
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+
+    &.active a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.navbar.affix {
+  background-color: #fff;
+
+  .navbar-nav > li {
+    a {
+      & {
+        color: $brand-secondary;
+      }
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+      }
+    }
+
+    &.active a {
+      &,
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: $brand-primary;
+  }
+}
+
+.navbar-default.affix-top {
+  .navbar-toggle {
+    &,
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: $navbar-white;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: $grid-float-breakpoint) {
+  .navbar .nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

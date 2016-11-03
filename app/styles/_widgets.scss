@@ -1,0 +1,63 @@
+.btn-outline {
+  &,
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .mobile-text-center {
+    text-align: center;
+  }
+}
+
+.content-section {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .img-responsive {
+    margin: 0 auto;
+    max-height: 250px;
+  }
+}
+
+.content-section-image-bg {
+  padding: 100px 0;
+
+  &:before {
+    @include absolute-block(0, 0, 0, 0);
+    content: '';
+    background-color: $brand-secondary;
+    opacity: 0.7;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.secondary-bg {
+  @extend .content-section;
+  background-color: $brand-secondary;
+}
+
+.tertiary-bg {
+  @extend .content-section;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+
+  h2 {
+    color: $brand-primary;
+  }
+}

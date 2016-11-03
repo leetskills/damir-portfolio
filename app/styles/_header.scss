@@ -1,0 +1,58 @@
+header.header {
+  background-image: url("../images/postits-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: $navbar-height;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    @include absolute-block(0, 0, 0, 0);
+    content: '';
+    background-color: darken($brand-primary, 30%);
+    background-color: rgb(140, 30, 70);
+    opacity: 0.5;
+  }
+
+  .header-content {
+    padding: 50px 20px;
+    position: relative;
+    width: 100%;
+
+    .header-content-inner {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+  }
+
+  h1 {
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: -0.1ex;
+  }
+}
+
+header.header-process {
+  background-image: url("../images/process/process-bg.jpg");
+}
+
+header.header-work {
+  background-image: url("../images/work/work-bg.jpg");
+}
+
+header.header-about {
+  background-image: url("../images/about/header-bg.jpg");
+}
+
+@media (min-width: $screen-md-min), (min-width: $screen-xs-min) and (orientation : landscape) {
+  header.header {
+    min-height: 100%;
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
