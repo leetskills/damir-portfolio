@@ -41,7 +41,7 @@
 .prototyping-bg {
   @extend .content-section;
   @extend .content-section-image-bg;
-  background-image: url("../images/process/prototyping.jpg");
+  background-image: url("../images/process/prototyping.png");
   background-position: top center;
 }
 
@@ -69,6 +69,26 @@
   @extend .content-section;
   @extend .content-section-image-bg;
   background-image: url("../images/work/zonza-refresh-backlog.png");
+  background-position: top center;
+}
+
+.scoota-campaigns-wireframe-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/work/scoota-campaigns-wireframe.png");
+}
+
+.scoota-style-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/process/prototyping.png");
+  background-position: top center;
+}
+
+.scoota-create-wireframe-bg {
+  @extend .content-section;
+  @extend .content-section-image-bg;
+  background-image: url("../images/work/scoota-create-wireframe.png");
   background-position: top center;
 }
 

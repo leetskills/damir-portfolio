@@ -7,4 +7,11 @@
       top: 70
     }
   })
+
 })(jQuery);
+
+$(document).ready(function() {
+  $('#scoota-campaigns-lightbox a').simpleLightbox();
+  $('#scoota-style-lightbox a').simpleLightbox();
+  $('#scoota-create-lightbox a').simpleLightbox();
+})
