@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "simplelightbox": "^1.11.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -12,10 +13,12 @@
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
       ]
+    },
+    "simplelightbox": {
+      "main": [
+        "dist/simplelightbox.scss",
+        "dist/simple-lightbox.js"
+      ]
     }
-  },
-  "devDependencies": {
-    "chai": "~3.3.0",
-    "mocha": "~2.3.3"
   }
 }
