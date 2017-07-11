@@ -2,9 +2,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 @import "custom-variables";
 @import "bootstrap-variables";
+@import "simplelightbox-variables";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/simplelightbox/dist/simplelightbox.scss";
 // endbower
 
 @import "mixins";
